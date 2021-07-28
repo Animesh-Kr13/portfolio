@@ -68,6 +68,12 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+.skills{
+    display: block;
+    font-weight: 700;
+    color: var(--clr-accent);
+}
+
 /* Buttons */
 
 .btn {
@@ -341,9 +347,9 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(img/servicesnew.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: soft-light;
     color: var(--clr-light);
     text-align: center;
 }
@@ -372,6 +378,15 @@ header {
     margin: 0 auto;
 }
 
+.service h3{
+    letter-spacing: 3px;
+}
+
+
+.service p{
+    letter-spacing: 1.5px;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -382,6 +397,10 @@ header {
     
     .service + .service {
         margin-left: 2em;
+    }
+
+    .service{
+        width: 33.33%;
     }
 }
 
@@ -430,14 +449,19 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark); */
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
+    background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .portfolio__item {
