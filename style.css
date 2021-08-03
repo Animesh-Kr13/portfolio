@@ -550,16 +550,20 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .site-link--text {
     text-decoration: none;
     cursor: pointer;
-    color: var(--clr-dark);
+    color: var(--clr-accent);
+    transition: transform 200ms ease-in-out;
+    border: 2px solid var(--clr-accent);
+    padding: 0.5rem 1rem;
 }
 
 .site-link--text:hover,
 .site-link--text:focus {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
+    transform: scale(1.2);
 }
